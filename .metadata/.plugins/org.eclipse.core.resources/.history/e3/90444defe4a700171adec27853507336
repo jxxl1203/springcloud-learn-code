@@ -1,0 +1,16 @@
+spring: 
+  application: 
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jxxl1203/config-repo-demo #仓库地址
+          searchPaths: repo #添加需要扫面的下属路径
+          username: #用户名
+          password: #密码
+server:
+  port: 8888
+eureka: 
+  client: 
+    serviceUrl: http://localhost:8081/eureka/

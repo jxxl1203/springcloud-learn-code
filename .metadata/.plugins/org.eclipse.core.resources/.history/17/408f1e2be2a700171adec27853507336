@@ -1,0 +1,11 @@
+@RestController
+public class ConfigController {
+
+    @Value("${info.title}")
+    private String title;
+
+    @GetMapping("/title")
+    public String getTitle(){
+        return title;
+    }
+}

@@ -1,0 +1,10 @@
+server: 
+  port: 8081
+eureka: 
+  client: 
+    registerWithEureka: false #是否注册到其他节点
+    fetchRegistry: false  #是否同步其他节点数据
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+  instance: 
+    hostname: localhost
