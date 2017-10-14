@@ -1,7 +1,0 @@
-@SpringBootApplication
-public class ConfigClientApp {
-
-    public static void main(String[] args) {
-        new SpringApplicationBuilder(ConfigClientApp.class).web(true).run(args);
-    }
-}

@@ -1,9 +1,0 @@
-@SpringBootApplication
-@EnableConfigServer
-public class ConfigServerApp {
-
-    public static void main(String[] args) {
-        new SpringApplicationBuilder(ConfigServerApp.class).web(true).run(args);    
-    }
-
-}
